@@ -3,7 +3,7 @@ dutch national flag algo{
 //here all the  -->0's are placed till low-1 
 //--> 1's are placed from low to mid-1 
 //--> 2's are placed from high+1 to end
-low=0,mid=0,high=0
+low=0,mid=0,high=arr.size()-1
 while(mid<=high)
   {
       switch(arr[mid])
