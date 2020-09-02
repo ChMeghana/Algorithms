@@ -1,0 +1,21 @@
+  floyd's toroise cycle detection algorithm
+  {
+    // 1st loop slow ptr moving 1 step and fast ptr moving 2 steps at a time
+    slow=arr[0]
+    fast=arr[0]
+    do{
+    slow=arr[slow]
+    fast=arr[fast]
+    }while(fast!=slow)
+
+    // 2nd loop slow & fast ptr moving 1 step at a time
+    slow=fast
+    while(slow!=fast)
+    {
+    slow=arr[slow]
+    fast=arr[fast]
+    }
+
+
+     return fast;
+  }
